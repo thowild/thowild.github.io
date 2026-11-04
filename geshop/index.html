@@ -21,25 +21,44 @@
 <main>
   <span class="badge">Project of THOWILD</span>
   <h1>Geshop</h1>
-  <p class="lead">Geshop helps streamline Pinterest content management and publishing workflows for one account: the Gesho Affiliate Pinterest account, <strong>@geshoAffiliate</strong>.</p>
+  <p class="lead">Geshop is a personal Pinterest management tool that helps plan, create, and publish product-recommendation Pins for one account: the Gesho Affiliate Pinterest account, <strong>@geshoAffiliate</strong>. It connects to Pinterest only through the official Pinterest API v5, using OAuth 2.0 authorization granted by the account owner.</p>
 
   <h2>What Geshop does</h2>
   <div class="grid">
     <div class="card">
       <h3>Content Planning</h3>
-      <p>Organize product recommendation content and publishing workflows for the @geshoAffiliate account.</p>
+      <p>Organize product recommendation content — titles, descriptions, images, and destination links — and prepare publishing workflows for the @geshoAffiliate account.</p>
     </div>
     <div class="card">
       <h3>Pin Publishing</h3>
       <p>Create and publish Pins to the account owner's own boards through the official Pinterest API, after the owner authorizes access with Pinterest OAuth.</p>
     </div>
+    <div class="card">
+      <h3>Board Management</h3>
+      <p>Read the account's own boards and Pins, and create boards on the owner's account, so content can be organized into themed collections.</p>
+    </div>
+    <div class="card">
+      <h3>Performance Reporting</h3>
+      <p>Read analytics for the account's own Pins to understand which product recommendations perform well.</p>
+    </div>
   </div>
 
-  <h2>Who it is for</h2>
-  <p>Geshop is a personal, single-user tool. It is operated by Thoriq Wildianto (THOWILD / Gesho Affiliate) and is used only to manage his own Pinterest account. It is not offered to the public, and it does not access, manage, or publish to any other person's Pinterest account.</p>
+  <h2>How it works</h2>
+  <ol>
+    <li><strong>Connect.</strong> The account owner signs in on Pinterest's own authorization page and approves the specific permissions (scopes) Geshop requests. Geshop never asks for, sees, or stores the owner's Pinterest password.</li>
+    <li><strong>Prepare.</strong> The owner prepares a Pin — image, title, description, and destination link — and chooses one of their own boards.</li>
+    <li><strong>Publish.</strong> Geshop sends the Pin to Pinterest through the official API, and the Pin is published to the owner's account.</li>
+    <li><strong>Review.</strong> The owner reviews the published Pin and its analytics, and can revoke Geshop's access at any time in their Pinterest settings.</li>
+  </ol>
 
-  <h2>How it connects to Pinterest</h2>
-  <p>Geshop connects through Pinterest's official API (Pinterest API v5) using OAuth 2.0. Access is granted by the account owner on Pinterest's own authorization page, can be revoked by the owner at any time in their Pinterest settings, and is limited to the scopes the owner approves.</p>
+  <h2>Who it is for</h2>
+  <p>Geshop is a personal, single-user tool. It is operated by Thoriq Wildianto (THOWILD / Gesho Affiliate) and is used only to manage his own Pinterest account. It is not offered to the public, has no sign-up, and it does not access, manage, or publish to any other person's Pinterest account.</p>
+
+  <h2>Pinterest data and permissions</h2>
+  <p>Geshop requests only the access it needs to operate: reading the owner's own account information, boards, and Pins; creating boards and Pins on the owner's account; and reading analytics for the owner's own Pins. Access tokens are never stored on this website or in its public source repository. How data is handled is described in full in the <a href="/geshop/privacy-policy.html">Geshop Privacy Policy</a>.</p>
+
+  <h2>About the operator</h2>
+  <p>Geshop is a project of <strong>THOWILD</strong>, the personal brand of Thoriq Wildianto (Indonesia), who curates product recommendations as Gesho Affiliate. Questions about this tool can be sent through the <a href="/geshop/contact.html">contact page</a>.</p>
 
   <p><a href="/geshop/privacy-policy.html">Read the Geshop Privacy Policy</a> &middot; <a href="/geshop/contact.html">Contact the operator</a></p>
 </main>
