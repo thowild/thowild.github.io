@@ -5,20 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Geshop — Pinterest Management Tool by THOWILD</title>
 <meta name="description" content="Geshop is a personal tool, operated by THOWILD, for managing the Gesho Affiliate Pinterest account through the official Pinterest API.">
+<script>(function(){var d=document.documentElement;d.classList.add('js');var t=null;try{t=new URLSearchParams(location.search).get('theme')||localStorage.getItem('thowild-theme')}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.dataset.theme=t})();</script>
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="logo" href="/">THOWILD</a>
-    <nav>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="/">THO<em>WILD</em></a>
+    <nav class="menu">
       <a href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/blog/">Jurnal</a>
+      <a href="/#about">About</a>
       <a href="/geshop/">Geshop</a>
-      <a href="/geshop/contact.html">Contact</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Ganti mode gelap/terang"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
   </div>
 </header>
-<main>
+<main class="wrap page">
   <span class="badge">Project of THOWILD</span>
   <h1>Geshop</h1>
   <p class="lead">Geshop is a personal Pinterest management tool that helps plan, create, and publish product-recommendation Pins for one account: the Gesho Affiliate Pinterest account, <strong>@geshoAffiliate</strong>. It connects to Pinterest only through the official Pinterest API v5, using OAuth 2.0 authorization granted by the account owner.</p>
@@ -62,11 +66,16 @@
 
   <p><a href="/geshop/privacy-policy.html">Read the Geshop Privacy Policy</a> &middot; <a href="/geshop/contact.html">Contact the operator</a></p>
 </main>
-<footer>
-  <div class="footer-in">
-    <span>&copy; 2026 THOWILD</span>
-    <span><a href="/geshop/privacy-policy.html">Privacy Policy</a><a href="/geshop/contact.html">Contact</a></span>
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <span><span class="fbrand">THOWILD</span> &nbsp;© 2026 THOWILD</span>
+    <span>
+      <a href="/geshop/">Geshop</a>
+      <a href="/geshop/privacy-policy.html">Privacy Policy</a>
+      <a href="/geshop/contact.html">Contact</a>
+    </span>
   </div>
 </footer>
+<script src="/assets/main.js" defer></script>
 </body>
 </html>

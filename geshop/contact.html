@@ -5,20 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact Geshop — THOWILD</title>
 <meta name="description" content="Contact details for Geshop and THOWILD.">
+<script>(function(){var d=document.documentElement;d.classList.add('js');var t=null;try{t=new URLSearchParams(location.search).get('theme')||localStorage.getItem('thowild-theme')}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.dataset.theme=t})();</script>
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="logo" href="/">THOWILD</a>
-    <nav>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="/">THO<em>WILD</em></a>
+    <nav class="menu">
       <a href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/blog/">Jurnal</a>
+      <a href="/#about">About</a>
       <a href="/geshop/">Geshop</a>
-      <a href="/geshop/contact.html">Contact</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Ganti mode gelap/terang"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
   </div>
 </header>
-<main>
+<main class="wrap page">
   <h1>Contact</h1>
   <p class="lead">Geshop and this website are operated by Thoriq Wildianto (THOWILD / Gesho Affiliate).</p>
 
@@ -31,11 +35,16 @@
   </table>
   <p>For privacy questions or data deletion requests relating to Geshop, please reach out through one of the channels above and mention "Geshop" in your message. See also the <a href="/geshop/privacy-policy.html">Geshop Privacy Policy</a>.</p>
 </main>
-<footer>
-  <div class="footer-in">
-    <span>&copy; 2026 THOWILD</span>
-    <span><a href="/geshop/privacy-policy.html">Privacy Policy</a><a href="/geshop/contact.html">Contact</a></span>
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <span><span class="fbrand">THOWILD</span> &nbsp;© 2026 THOWILD</span>
+    <span>
+      <a href="/geshop/">Geshop</a>
+      <a href="/geshop/privacy-policy.html">Privacy Policy</a>
+      <a href="/geshop/contact.html">Contact</a>
+    </span>
   </div>
 </footer>
+<script src="/assets/main.js" defer></script>
 </body>
 </html>
